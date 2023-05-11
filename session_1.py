@@ -220,15 +220,15 @@ For multiples of three print "Fizz" instead of the number and for the multiples 
 For numbers which are multiples of both three and five print "FizzBuzz".
 """
 
-for number in range(1, 18):
-    if number % 3 == 0 and number % 5 == 0:
-        print("FizzBuzz")
-    elif number % 3 == 0:
-        print("Fizz")
-    elif number % 5 == 0:
-        print("Buzz")
-    else:
-        print(number)
+# for number in range(1, 18):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
 
 # Exercise 2.1 | Math quiz
 """
@@ -271,14 +271,17 @@ For example, for 3 display:
 * * * * *
 """
 
-i = input('Provide a number: ')
-x = 1
+star = '*'
+integer = int(input('Please provide and integer: '))
+number = 1
+start = 1
+space = integer
+while number <= integer:
+    print((space * ' '),(start * star),(space * ' '))
+    start += 2
+    number += 1
+    space -= 1
 
-while True:
-    if x < 5:
-        tree = i * x
-        print(f' {tree} ')
-        x += 1
 
 # Exercise 2.3
 """
